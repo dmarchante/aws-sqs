@@ -161,35 +161,6 @@ public class SQSClient {
             }
 
             System.out.println();
-
-//            // Delete the messages.
-//            /*
-//                Queue A
-//             */
-//            System.out.println("Deleting a message.\n");
-//            final String queueAMessageReceiptHandle = queueAMessages.get(0).getReceiptHandle();
-//            sqs.deleteMessage(new DeleteMessageRequest(queueAUrl,
-//                    queueAMessageReceiptHandle));
-//
-//            /*
-//                Queue B
-//             */
-//            System.out.println("Deleting a message.\n");
-//            final String queueBMessageReceiptHandle = queueBMessages.get(0).getReceiptHandle();
-//            sqs.deleteMessage(new DeleteMessageRequest(queueAUrl,
-//                    queueBMessageReceiptHandle));
-//
-//            /*
-//                Queue C
-//             */
-//            System.out.println("Deleting a message.\n");
-//            final String queueCMessageReceiptHandle = queueCMessages.get(0).getReceiptHandle();
-//            sqs.deleteMessage(new DeleteMessageRequest(queueAUrl,
-//                    queueCMessageReceiptHandle));
-
-//            // Delete the queue.
-//            System.out.println("Deleting the test queue.\n");
-//            sqs.deleteQueue(new DeleteQueueRequest(queueAUrl));
         } catch (final AmazonServiceException ase) {
             System.out.println("Caught an AmazonServiceException, which means " +
                     "your request made it to Amazon SQS, but was " +
